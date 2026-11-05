@@ -12,4 +12,4 @@ metadata:
 
 **Why:** 사용자가 직접 요청한 백업 정책. 스킬/문서를 잃지 않으려는 목적.
 
-**How to apply:** 스킬이나 md 파일을 만들거나 수정하는 작업을 마치면 `bash ~/claude-backup/backup.sh` 를 실행해 commit+push 한다. 로컬 클론은 `C:\Users\cc03c\claude-backup`. 새 작업 폴더에서 작업하면 스크립트의 `WORKDIRS` 배열에 그 경로를 추가한다. SessionEnd 훅도 이 스크립트를 자동 실행하도록 설정돼 있다(`~/.claude/settings.json`).
+**How to apply:** 스킬이나 md 파일을 만들거나 수정하는 작업을 마치면 `bash ~/claude-backup/backup.sh` 를 실행해 commit+push 한다. 로컬 클론은 `C:\Users\cc03c\claude-backup`. 새 작업 폴더에서 작업하면 스크립트의 `WORKDIRS` 배열에 그 경로를 추가한다. 자동 실행 훅은 아직 없음(설정 변경이 권한 검사에서 거부됨) — 그래서 작업 끝날 때 직접 실행해야 함.
