@@ -1,0 +1,1 @@
+- [GitHub 백업](backup-to-github.md) — 스킬·md 파일은 YoungHKim/claude 로 backup.sh 실행해 백업
